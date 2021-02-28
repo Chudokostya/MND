@@ -75,4 +75,4 @@ for i in range(8):
         Qx = (Y[i] - Y_0)*(Y[i] - Y_0)
         Q.append(Qx)
 print(Q)
-print("Ultimate result(min((Y-Y0)^2):",min(Q))
+print("Variant number 227 Ultimate result(min((Y-Y0)^2):",min(Q))
