@@ -28,31 +28,27 @@ print(Y)
 
 
 
+#Дякую за зауваження, побачив що можна оптімізувати!
+
 X_0 = []
 
-X01 = (max(X_1) + min(X_1)) / 2
-X02 = (max(X_2) + min(X_2)) / 2
-X03 = (max(X_3) + min(X_3)) / 2
-X_0.append(X01)
-X_0.append(X02)
-X_0.append(X03)
+X_0.append((max(X_1) + min(X_1)) / 2)
+X_0.append((max(X_2) + min(X_2)) / 2)
+X_0.append((max(X_3) + min(X_3)) / 2)
 print(X_0)
-
 
 Y_0 = A[0] + X_0[0]*A[1] + X_0[1]*A[2] + X_0[2]*A[3]
 print(Y_0)
 
 
+#Дякую за зауваження, побачив що можна оптімізувати!
+
 Dx = []
 
-Dx_1 = X01 - min(X_1)
-Dx_2 = X02 - min(X_2)
-Dx_3 = X03 - min(X_3)
-Dx.append(Dx_1)
-Dx.append(Dx_2)
-Dx.append(Dx_3)
+Dx.append(X_0[0] - min(X_1))
+Dx.append(X_0[1] - min(X_2))
+Dx.append(X_0[2] - min(X_3))
 print(Dx)
-
 
 
 Norm_X_1 = []
