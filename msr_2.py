@@ -125,9 +125,9 @@ print('Перевірка:\n'
       'a0 + a1 * max_x1 + a2 * max_x2 = {2}\n'
       'b0 + b1 * X[1][0] + b2 * X[1][1] = {3}\n'
       'a0 + a1 * min_x1 + a2 * min_x2 = {4}\n'
-      'b0 + b1 * X[2][0] + b2 * X[2][1] = {5}'.format(round(a0 + a1 * min_x1 + a2 * min_x2, 3),
-                                            round(b0 + b1 * X[0][0] + b2 * X[0][1], 3),
-                                            round(a0 + a1 * max_x1 + a2 * min_x2, 3),
-                                            round(b0 + b1 * X[1][0] + b2 * X[1][1], 3),
-                                            round(a0 + a1 * min_x1 + a2 * max_x2, 3),
-                                            round(b0 + b1 * X[2][0] + b2 * X[2][1], 3)))
+      'b0 + b1 * X[2][0] + b2 * X[2][1] = {5}'.format((a0 + a1 * min_x1 + a2 * min_x2),
+                                            (b0 + b1 * X[0][0] + b2 * X[0][1]),
+                                            (a0 + a1 * max_x1 + a2 * min_x2),
+                                            (b0 + b1 * X[1][0] + b2 * X[1][1]),
+                                            (a0 + a1 * min_x1 + a2 * max_x2),
+                                            (b0 + b1 * X[2][0] + b2 * X[2][1])))
