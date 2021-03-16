@@ -67,8 +67,8 @@ R_uv2 = abs(T_uv2 - 1) / deviation
 R_uv3 = abs(T_uv3 - 1) / deviation
 
 
-if R_uv1 < 2 or R_uv2 < 2 or R_uv3 < 2:
-    print('Дисперсія однорідна')
+if R_uv1 > 2 or R_uv2 > 2 or R_uv3 > 2:
+    print('Дисперсія неоднорідна.Будь-ласка збільшіть m!')
 
 
 
