@@ -1,7 +1,7 @@
 import random
 from numpy import linalg
 from math import sqrt
-
+import sys
 
 
 min_x1 = -40
@@ -69,6 +69,7 @@ R_uv3 = abs(T_uv3 - 1) / deviation
 
 if R_uv1 > 2 or R_uv2 > 2 or R_uv3 > 2:
     print('Дисперсія неоднорідна.Будь-ласка збільшіть m!')
+    sys.exit()
 
 
 
