@@ -170,11 +170,11 @@ def fisher_kriteria(table, checks, Sb, N = 8, m = 3, d = 1):
 
 
 
-x1 = [15, 45]
+x1 = [10, 60]
 print('x1min = {0}, x1max = {1}'.format(x1[0], x1[1]))
-x2 = [-35, 15]
+x2 = [-25, 10]
 print('x2min = {0}, x2max = {1}'.format(x2[0], x2[1]))
-x3 = [-35, -5]
+x3 = [10, 15]
 print('x3min = {0}, x3max = {1}\n'.format(x3[0], x3[1]))
 
 
