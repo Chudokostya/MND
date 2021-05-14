@@ -83,7 +83,7 @@ def experiment(x1, x2, x3, y, m = 3, N = 15):
             print(Gp*Sbeta*Fp)
             print('\n')
 
-            if fisher_check:
+            if fisher_check and len(indexes) <= len(b) - len(indexes):
                 return table, b, check_b, student_b, student_checks, Fp
             else:
                 flag = 1
