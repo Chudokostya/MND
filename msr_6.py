@@ -202,7 +202,7 @@ Sad = m * sum([(y_st[i] - Y_average[i]) ** 2 for i in range(15)]) / (n - d)
 Fp = Sad / sb
 F4 = n - d
 print("Fp =", Fp)
-if Fp < f.ppf(q=0.95, dfn=F4, dfd=F3):
-    print("Рівняння регресії адекватне при рівні значимості 0.05")
-else:
+if Fp > f.ppf(q=0.95, dfn=F4, dfd=F3) or len(coefs2) == 1:
     print("Рівняння регресії неадекватне при рівні значимості 0.05")
+else:
+    print("Рівняння регресії адекватне при рівні значимості 0.05")
